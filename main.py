@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     cursor.execute('''CREATE TABLE IF NOT EXISTS polaczenia_duze (
     from_subscriber INTEGER, to_subscriber INTEGER,  datetime TIMESTAMP, duration INTEGER, celltower INTEGER);''')
-    with open(file, 'r') as a_file:
+    with open('polaczenia_duze.csv', 'r') as a_file:
         reader = csv.reader(a_file, delimiter=",")
         next(reader, None)
         rows = [row for row in reader]
