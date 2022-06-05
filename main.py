@@ -3,7 +3,7 @@ import csv
 
 import sqlite3
 
- if __name__ == '__main__':
+if __name__ == '__main__':
     file = input()
     con = sqlite3.connect(":memory:", detect_types=sqlite3.PARSE_DECLTYPES | sqlite3.PARSE_COLNAMES)
     cursor = con.cursor()
